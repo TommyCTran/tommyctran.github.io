@@ -11,46 +11,439 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 
-<style>
-<!-- CSS -->
+<!-- SKY #CAEBF2 CARBON #A9A9A9 WATERMELON #FF3B3F NEUTRAL #EFEFEF -->
 
-.header 
-{
-    background-color: #e6f0ff;
+<style>
+    
+@font-face {
+  font-family: 'AlegreyaSans-Regular';
+  src: url('fonts/AlegreyaSans-Regular.ttf') format('truetype');
 }
 
+@font-face {  
+  font-family: 'AlegreyaSans-Bold';
+  src: url('fonts/AlegreyaSans-Bold.ttf') format('truetype');
+}
+
+body 
+{
+    font-family: AlegreyaSans-Bold;
+    color: #A9A9A9;
+    position: relative;
+}    
+
+button
+{
+    border: none;
+    background-color: #EFEFEF;
+    outline: none;
+}
+
+button:hover
+{
+    background-color: #CAEBF2;
+    border-radius: 5px;
+}
+h1
+{
+    font-size: 100px;
+}
+
+h2
+{
+    font-size: 55px;
+}
+
+h3
+{
+    font-size: 27.5px;
+}
+
+.nav
+{
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    margin: 0px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    font-size: 25px;
+    color: #A9A9A9;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px;
+}
+
+li a:hover {
+    color: #FF3B3F;
+    text-decoration: none;
+}
+.header 
+{
+    background-color: #EFEFEF;
+    padding: 50px;
+}
+.content-grey 
+{
+    background-color: #EFEFEF;
+    padding: 150px;
+
+}
+
+.content-white 
+{
+    background-color: #FFFFFF;
+    padding: 150px;
+}
+
+.info 
+{
+    font-size: 25px;
+    padding: 50px 0px 0px 0px;
+
+}
+
+.line
+{
+    border-style: solid;
+    border-color: #CAEBF2;
+}
+
+.section
+{
+    font-size: 40px;
+    color: #FFFFFF;
+    background-color: #FF3B3F;
+    padding: 25px;
+    border-radius: 5px;
+    text-align: center;
+    max-width: 250px;
+}
+
+.experience
+{
+    background-color: #CAEBF2;
+    padding: 25px;
+    border-radius: 5px;
+    font-size: 50px;
+}
+
+.skill
+{
+    font-size: 20px;
+    padding: 10px;
+}
+.progress
+{
+    background-color: #FFFFFF;
+    padding: 0px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.progress-bar
+{
+    background-color: #CAEBF2;
+    color: #A9A9A9;
+    
+}
+
+.glyphicon-chevron-down
+{
+    margin: 0px 10px;
+    font-size: 20px;
+}
+
+.glyphicon-minus
+{
+    margin: 0px 50px;
+    font-size: 25px;
+}
+
+.glyphicon-share
+{
+    margin: 10px 55px;
+    font-size: 60px;
+}
+
+.affix 
+{
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+}
+
+.affix ~ .container-fluid {
+     position: relative;
+     top: 75px;
+}
+
+@media screen and (max-width: 1000px)
+{
+    .nav
+    {
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    margin: 0px;
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
+    li {
+        float: right;
+    }
+
+    li a {
+        font-size: 15px;
+        color: #A9A9A9;
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        padding: 10px;
+    }
+
+    li a:hover {
+        color: #FF3B3F;
+        text-decoration: none;
+    }
+    .section
+    {
+        font-size: 25px;
+        color: #FFFFFF;
+        background-color: #FF3B3F;
+        padding: 25px;
+        border-radius: 5px;
+        text-align: center;
+        max-width: 250px;
+    }
+}
 </style>
 </head>
 <body> 
 
-<div class =" container-fluid header">
-    
-    <div class ="col-sm-2">
-        <!-- Fill -->
+<div class ="container-fluid header">
+
+    <div class ="text-center">
+        <h1> Tommy Tran </h1>
     </div>
-
-
-    <div class ="col-sm-3">
-            Lorem Ipsum is simply dummy text of the printing and typesetting 
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of 
-            type and scrambled it to make a type specimen book. It has 
-            survived not only five centuries, but also the leap into 
-            electronic typesetting, remaining essentially unchanged. It
-            was popularised in the 1960s with the release of Letraset 
-            sheets containing Lorem Ipsum passages, and more recently with 
-            desktop publishing software like Aldus PageMaker including 
-            versions of Lorem Ipsum.
+    <div class ="line center-block" style="width: 15%"></div>
+    <div class ="text-center">
+        <h2>Software Engineer</h2>
     </div>
-
-    <div class ="col-sm-7">
-        <!-- Fill -->
+    <div class ="line center-block" style="width: 10%"></div>
+    <div class ="col-sm-12 text-center">
+        <h3>As you think, so shall you become.</h3>
     </div>
+</div>    
 
+<div class ="container-fluid nav" data-spy="affix" data-offset-top="405">
+<ul>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#education">Education</a></li>
+  <li><a href="#skill">Skills</a></li>
+  <li><a href="#experience">Experience</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
 </div>
 
-  
 
+<div class ="container-fluid content-grey" id="about">
+    <div class="section">
+        About
+    </div>
+    <div class="info">
+        I am an aspiring Software Engineer currently finish my undergraduate in 
+        Computer Science at the University of Maryland, Baltimore County. 
+        Whenever I see there is a way to innovate something, I find great joy in
+        trying to find a solution to such a problem. If I do not know the answer
+        to the problem, I will go to great lengths of research and studying to 
+        finish my endeavor. There is a kind of satisfaction that I can only 
+        receive when I know I have helped someone or myself with something that 
+        I have put in time to create.
+    </div>
+</div>
+  
+<div class ="container-fluid content-white" id="experience">
+    <div class="section">
+        Experience
+    </div>
+    <div class="info">
+        <div class="experience">
+            Cyber Pack Ventures
+            <div class="glyphicon glyphicon-minus"></div>
+            Research Intern
+            <div class="glyphicon glyphicon-minus"></div>
+            July 2016 - Present            
+            
+            <a href="#" onclick="return false;">
+
+                <div class="glyphicon glyphicon-share"></div>
+
+            </a>
+        </div>
+    </div>
+</div>    
+    
+<div class ="container-fluid content-grey" id="skill">
+    <div class="section">
+        Skills
+    </div>
+    <div class="info">
+        <div class="col-sm-6">
+            <h3>
+                Java
+                <button type="button" data-toggle="collapse" data-target="#java">
+                    <div class="glyphicon glyphicon-chevron-down"></div>
+                </button>
+            </h3>
+
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width:100%">
+                    <div class ="skill text-center">Expert</div>
+                </div>
+            </div>     
+            <div id="java" class="collapse">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>        
+            <h3>
+                C / C++
+                <button type="button" data-toggle="collapse" data-target="#c">
+                    <div class="glyphicon glyphicon-chevron-down"></div>
+                </button>
+            </h3>
+
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width:75%">
+                    <div class ="skill text-center">Proficient</div>
+                </div>
+            </div>     
+            <div id="c" class="collapse">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
+            <h3>
+                JavaScript
+                <button type="button" data-toggle="collapse" data-target="#javascript">
+                    <div class="glyphicon glyphicon-chevron-down"></div>
+                </button>
+            </h3>
+
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width:50%">
+                    <div class ="skill text-center">Satisfactory</div>
+                </div>
+            </div>     
+            <div id="javascript" class="collapse">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
+            <h3>
+                SQL
+                <button type="button" data-toggle="collapse" data-target="#sql">
+                    <div class="glyphicon glyphicon-chevron-down"></div>
+                </button>
+            </h3>
+
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width:50%">
+                    <div class ="skill text-center">Satisfactory</div>
+                </div>
+            </div>     
+            <div id="sql" class="collapse">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
+
+
+        </div>
+        <div class="col-sm-6">
+            <h3>
+                Python
+                <button type="button" data-toggle="collapse" data-target="#python">
+                    <div class="glyphicon glyphicon-chevron-down"></div>
+                </button>
+            </h3>
+
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width:100%">
+                    <div class ="skill text-center">Expert</div>
+                </div>
+            </div>     
+            <div id="python" class="collapse">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
+            <h3>
+                HTML / CSS
+                <button type="button" data-toggle="collapse" data-target="#html">
+                    <div class="glyphicon glyphicon-chevron-down"></div>
+                </button>
+            </h3>
+
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width:75%">
+                    <div class ="skill text-center">Proficient</div>
+                </div>
+            </div>     
+            <div id="html" class="collapse">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
+            <h3>
+                PHP
+                <button type="button" data-toggle="collapse" data-target="#php">
+                    <div class="glyphicon glyphicon-chevron-down"></div>
+                </button>
+            </h3>
+
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width:50%">
+                    <div class ="skill text-center">Satisfactory</div>
+                </div>
+            </div>     
+            <div id="php" class="collapse">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
+            <h3>
+                Linux
+                <button type="button" data-toggle="collapse" data-target="#linux">
+                    <div class="glyphicon glyphicon-chevron-down"></div>
+                </button>
+            </h3>
+
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width:50%">
+                    <div class ="skill text-center">Satisfactory</div>
+                </div>
+            </div>     
+            <div id="linux" class="collapse">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
+        </div>     
+    </div>
+</div>
 
 </body>
 </html>
