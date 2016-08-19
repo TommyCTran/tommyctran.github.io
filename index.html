@@ -32,13 +32,6 @@ body
     position: relative;
 }    
 
-button
-{
-    border: none;
-    background-color: #EFEFEF;
-    outline: none;
-}
-
 button:hover
 {
     background-color: #CAEBF2;
@@ -166,6 +159,20 @@ li a:hover {
     
 }
 
+.button-grey
+{
+    border: none;
+    background-color: #EFEFEF;
+    outline: none;
+}
+
+.button-white
+{
+    border: none;
+    background-color: #FFFFFF;
+    outline: none;
+}
+
 .glyphicon-chevron-down
 {
     margin: 0px 10px;
@@ -290,38 +297,44 @@ li a:hover {
         Experience
     </div>
     <div class="info">
-        <div class="experience">
-            Cyber Pack Ventures
-            <div class="glyphicon glyphicon-minus"></div>
-            Research Intern
-            <div class="glyphicon glyphicon-minus"></div>
-            July 2016 - Present            
-            
-            <a href="http://www.cyberpackventures.com" target="_blank">
-                <div class="glyphicon glyphicon-share"></div>
-            </a>
+        <div class="col-sm-4">
+            <h3>
+                Cyber Pack Ventures
+                <button type="button" class="button-white" data-toggle="collapse" data-target="#">
+                    <div class="glyphicon glyphicon-chevron-down"></div>
+                </button>
+            </h3>    
+            <div id="" class="collapse">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
         </div>
-        <div class="experience">
-            Mind Lab
-            <div class="glyphicon glyphicon-minus"></div>
-            Software Intern
-            <div class="glyphicon glyphicon-minus"></div>
-            November 2011 – March 2012           
-            
-            <a href="http://www.mindlab.umd.edu/index.shtml" target="_blank">
-                <div class="glyphicon glyphicon-share"></div>
-            </a>
+        <div class="col-sm-4">
+            <h3>
+                Mind Lab
+                <button type="button" class="button-white" data-toggle="collapse" data-target="#">
+                    <div class="glyphicon glyphicon-chevron-down"></div>
+                </button>
+            </h3>    
+            <div id="" class="collapse">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
         </div>
-        <div class="experience">
-            Vis Art Design Center
-            <div class="glyphicon glyphicon-minus"></div>
-            Design Intern
-            <div class="glyphicon glyphicon-minus"></div>
-            November 2010 – March 2011        
-            
-            <a href="http://www.visartsatrockville.org/" target="_blank">
-                <div class="glyphicon glyphicon-share"></div>
-            </a>
+        <div class="col-sm-4">
+            <h3>
+                Vis Art Design Center
+                <button type="button" class="button-white" data-toggle="collapse" data-target="#">
+                    <div class="glyphicon glyphicon-chevron-down"></div>
+                </button>
+            </h3>    
+            <div id="" class="collapse">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
         </div>
     </div>
 </div>    
@@ -334,7 +347,7 @@ li a:hover {
         <div class="col-sm-6">
             <h3>
                 Java
-                <button type="button" data-toggle="collapse" data-target="#java">
+                <button type="button" class="button-grey" data-toggle="collapse" data-target="#java">
                     <div class="glyphicon glyphicon-chevron-down"></div>
                 </button>
             </h3>
@@ -351,7 +364,7 @@ li a:hover {
             </div>        
             <h3>
                 C / C++
-                <button type="button" data-toggle="collapse" data-target="#c">
+                <button type="button" class="button-grey" data-toggle="collapse" data-target="#c">
                     <div class="glyphicon glyphicon-chevron-down"></div>
                 </button>
             </h3>
@@ -368,7 +381,7 @@ li a:hover {
             </div>
             <h3>
                 JavaScript
-                <button type="button" data-toggle="collapse" data-target="#javascript">
+                <button type="button" class="button-grey" data-toggle="collapse" data-target="#javascript">
                     <div class="glyphicon glyphicon-chevron-down"></div>
                 </button>
             </h3>
@@ -385,7 +398,7 @@ li a:hover {
             </div>
             <h3>
                 SQL
-                <button type="button" data-toggle="collapse" data-target="#sql">
+                <button type="button" class="button-grey" data-toggle="collapse" data-target="#sql">
                     <div class="glyphicon glyphicon-chevron-down"></div>
                 </button>
             </h3>
@@ -406,7 +419,7 @@ li a:hover {
         <div class="col-sm-6">
             <h3>
                 Python
-                <button type="button" data-toggle="collapse" data-target="#python">
+                <button type="button" class="button-grey" data-toggle="collapse" data-target="#python">
                     <div class="glyphicon glyphicon-chevron-down"></div>
                 </button>
             </h3>
@@ -423,7 +436,7 @@ li a:hover {
             </div>
             <h3>
                 HTML / CSS
-                <button type="button" data-toggle="collapse" data-target="#html">
+                <button type="button" class="button-grey" data-toggle="collapse" data-target="#html">
                     <div class="glyphicon glyphicon-chevron-down"></div>
                 </button>
             </h3>
@@ -440,7 +453,7 @@ li a:hover {
             </div>
             <h3>
                 PHP
-                <button type="button" data-toggle="collapse" data-target="#php">
+                <button type="button" class="button-grey" data-toggle="collapse" data-target="#php">
                     <div class="glyphicon glyphicon-chevron-down"></div>
                 </button>
             </h3>
@@ -457,7 +470,7 @@ li a:hover {
             </div>
             <h3>
                 Linux
-                <button type="button" data-toggle="collapse" data-target="#linux">
+                <button type="button" class="button-grey" data-toggle="collapse" data-target="#linux">
                     <div class="glyphicon glyphicon-chevron-down"></div>
                 </button>
             </h3>
